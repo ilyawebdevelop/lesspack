@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Medium.eot');
+  src: local('../fonts/Manrope-Medium'), local('Manrope-Medium'), url('../fonts/Manrope-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Manrope-Medium.woff2') format('woff2'), url('../fonts/Manrope-Medium.woff') format('woff'), url('../fonts/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-SemiBold.eot');
+  src: local('../fonts/Manrope-SemiBold'), local('Manrope-SemiBold'), url('../fonts/Manrope-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Manrope-SemiBold.woff2') format('woff2'), url('../fonts/Manrope-SemiBold.woff') format('woff'), url('../fonts/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Bold.eot');
+  src: local('../fonts/Manrope-Bold'), local('Manrope-Bold'), url('../fonts/Manrope-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Manrope-Bold.woff2') format('woff2'), url('../fonts/Manrope-Bold.woff') format('woff'), url('../fonts/Manrope-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-ExtraBold.eot');
+  src: local('../fonts/Manrope-ExtraBold'), local('Manrope-ExtraBold'), url('../fonts/Manrope-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Manrope-ExtraBold.woff2') format('woff2'), url('../fonts/Manrope-ExtraBold.woff') format('woff'), url('../fonts/Manrope-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  /* Скрывает слайдер, чтобы можно было создать свой */
+  width: 100%;
+  /* Указание параметра ширины требуется для Firefox. */
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+  /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+  border-color: transparent;
+  color: transparent;
+}
+ul[class] {
+  list-style: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  color: #C6A47C;
+  font-family: 'Manrope';
+  font-size: 1rem;
+  font-weight: 500;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.container {
+  max-width: calc(1330px + (15px * 2));
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-lg {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: calc(1790px + (15px * 2));
+}
+.btn {
+  font-family: 'Manrope';
+  font-weight: 800;
+  position: relative;
+  font-size: 1.06rem;
+  text-transform: uppercase;
+  transition: all 0.7s linear;
+  display: block;
+  color: #C6A47C;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 20px 30px -18px rgba(0, 0, 0, 0.25);
+  padding: 0.97rem 0px;
+  border: 1px solid #C6A47C;
+  border-radius: 18px;
+  width: 196px;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(15px);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn:hover {
+  box-shadow: 0px 20px 30px -18px rgba(0, 0, 0, 0.09);
+}
+@media (max-width: 991px) {
+  .btn {
+    padding: 1.2rem 0px;
+    font-size: 0.8rem;
+  }
+}
